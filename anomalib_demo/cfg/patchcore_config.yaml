@@ -57,7 +57,7 @@ visualization:
 
 project:
   seed: 0
-  path: ./results
+  path: ../models
 
 logging:
   logger: [] # options: [comet, tensorboard, wandb, csv] or combinations.
