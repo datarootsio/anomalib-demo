@@ -8,11 +8,13 @@ packages = [{include = "anomalib_demo"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-anomalib = "^0.3.7"
+#anomalib = "^0.3.7"
+anomalib = { git = "git@github.com:toon-vc/anomalib.git"}
 
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.17.0"
+flake8 = "^5.0.4"
 
 [build-system]
 requires = ["poetry-core"]
