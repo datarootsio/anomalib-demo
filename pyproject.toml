@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Toon Van Craenendonck <toon@dataroots.io>"]
 readme = "README.md"
-packages = [{include = "anomalib_demo"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
