@@ -1,7 +1,7 @@
 dataset:
   name: idrid
   format: folder
-  path: ../data/idrid
+  path: data/idrid
   normal_dir: normal # name of the folder containing normal images.
   abnormal_dir: abnormal # name of the folder containing abnormal images.
   normal_test_dir: null # name of the folder containing normal test images.
@@ -59,7 +59,7 @@ visualization:
 
 project:
   seed: 0
-  path: ../models
+  path: models
 
 logging:
   logger: [] # options: [comet, tensorboard, wandb, csv] or combinations.
