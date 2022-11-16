@@ -32,11 +32,3 @@ repos:
     require_serial: true
     types_or: [jupyter, markdown]
     additional_dependencies: [isort]
-  - id: nbqa-pylint
-    name: nbqa-pylint
-    description: Run 'pylint' on a Jupyter Notebook
-    entry: nbqa pylint
-    language: python
-    require_serial: true
-    types_or: [jupyter, markdown]
-    additional_dependencies: [pylint]
