@@ -10,6 +10,12 @@ packages = [{include = "anomalib_demo"}]
 python = "^3.8"
 #anomalib = "^0.3.7"
 anomalib = { git = "git@github.com:toon-vc/anomalib.git"}
+nbqa = "^1.5.3"
+isort = "^5.10.1"
+black = "^22.10.0"
+pre-commit = "^2.20.0"
+pylint = "^2.15.5"
+databooks = "^1.3.6"
 
 
 [tool.poetry.group.dev.dependencies]

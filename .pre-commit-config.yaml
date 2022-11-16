@@ -1,8 +1,42 @@
-- id: databooks-meta
-  name: databooks-meta
-  description:
-    "Remove Jupyter notebook metadata using `databooks`."
-  entry: databooks meta --yes
-  language: python
-  minimum_pre_commit_version: 2.9.2
-  types: [jupyter]
+repos:
+- repo: local
+  hooks: 
+  - id: databooks-meta
+    name: databooks-meta
+    description:
+      "Remove Jupyter notebook metadata using `databooks`."
+    entry: databooks meta --yes
+    language: python
+    minimum_pre_commit_version: 2.9.2
+    types: [jupyter]
+  - id: nbqa-flake8
+    name: nbqa-flake8
+    description: Run 'flake8' on a Jupyter Notebook
+    entry: nbqa flake8
+    language: python
+    require_serial: true
+    types_or: [jupyter, markdown]
+    additional_dependencies: [flake8]
+  - id: nbqa-black
+    name: nbqa-black
+    description: Run 'black' on a Jupyter Notebook
+    entry: nbqa black
+    language: python
+    require_serial: true
+    types_or: [jupyter, markdown]
+  - id: nbqa-isort
+    name: nbqa-isort
+    description: Run 'isort' on a Jupyter Notebook
+    entry: nbqa isort
+    language: python
+    require_serial: true
+    types_or: [jupyter, markdown]
+    additional_dependencies: [isort]
+  - id: nbqa-pylint
+    name: nbqa-pylint
+    description: Run 'pylint' on a Jupyter Notebook
+    entry: nbqa pylint
+    language: python
+    require_serial: true
+    types_or: [jupyter, markdown]
+    additional_dependencies: [pylint]
